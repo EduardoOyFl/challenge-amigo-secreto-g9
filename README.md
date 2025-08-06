@@ -35,5 +35,5 @@ Y el resultado será similar a la imagen siguiente:
 
 * Intento de añadir vacio o solo uno o más espacios en blanco
 
-  <img src="./img-md/validacion-vacio-blancos"/>
+  <img src="./img-md/validacion-vacio-blancos.png"/>
 
