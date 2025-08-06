@@ -1,8 +1,5 @@
 ![](./img-md/header.png)
 
-# Challenge: Amigo Secreto Esp G9 - Oracle ONE, Agosto de 2025 Chile
-
-
 Amigo Secreto, es un desarrollo web solicitado por Alura para el programa de capacitación Oracle ONE, este desarrollo web tiene por objeto, permitir al usuario ingresar nombres de sus amigos y luego realizar un sorteo aleatorio para determinar quien es el amigo secreto.
 
 ## Interfaz de Usuario
@@ -37,3 +34,7 @@ Y el resultado será similar a la imagen siguiente:
 
   <img src="./img-md/validacion-vacio-blancos.png"/>
 
+
+# Link de web publicada en GitHub Pages
+
+<a href="https://eduardooyfl.github.io/challenge-amigo-secreto-g9/">Web de "Challenge Amigo Secreto"</a>
