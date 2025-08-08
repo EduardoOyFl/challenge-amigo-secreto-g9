@@ -43,7 +43,7 @@ Amigo Secreto, es un desarrollo web solicitado por Alura para el programa de cap
 
   <img src="./img-md/validacion-de-repeticion.png"/>
   
-  Al pasar al proceso de Añadir el nuevo nombre a la lista de amigos, validará si el nuevo nombre ingresado ya existe en la lista de amigos, si existe, notificará con un mensajes de "Ya se ha agregado con anterioridad a: [el nombre duplicado]"; si el [el nombre duplicado] no existe en la lista, entonces termina agregándolo a la lista de amigos y renderizarla en la misma página web.
+  Al pasar al proceso de Añadir el nuevo nombre a la lista de amigos, validará si el nuevo nombre ingresado ya existe en la lista de amigos, si existe, notificará con un mensajes de "Ya se ha agregado con anterioridad a: [el nombre duplicado]", luego de aceptar la notificación, no se agrega el nombre para evitar duplicados y se mantiene el nombre en la caja de texto, a la espera de que se elimine o modifique manualmente, ya que por ejemplo, en la imagen de muestra, en vez de "Patricio" podria haberse intentado ingresar "Patricia" y solo haya sido error humano de escritura; si el [el nombre ingresado] no existe en la lista, entonces termina agregándolo a la lista de amigos y renderizarla en la misma página web, borrando el nombre escrito en la caja de texto.
 
 
 <hr>
