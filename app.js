@@ -7,9 +7,22 @@ function listarAmigos(){
     document.querySelector("#listaAmigos").innerHTML = "";
     if(amigos.length>0){
         for(i=0;i<amigos.length;i++){
-            document.querySelector("#listaAmigos").innerHTML += `<li>${amigos[i]}</li>\n`;
+            //document.querySelector("#listaAmigos").innerHTML += `<li>${amigos[i]}</li>\n`;
+            document.querySelector("#listaAmigos").innerHTML += `<div class="amigo-item">
+            <span class="amigo-numero">${i + 1}</span>
+            <span class="amigo-nombre">${amigos[i]}</span>
+            <button class="amigo-eliminar" onclick="eliminarAmigo(${i})" title="Eliminar amigo">
+                <span>&times;</span>
+            </button></div>
+        `; 
         }
     }
+}
+function eliminarAmigo(i){
+    const nombreEliminado = amigos[i];
+    amigos.splice(i, 1);
+    listarAmigos();
+    console.log(`Amigo "${nombreEliminado}" eliminado. Total: ${amigos.length}`);
 }
 
 //Funcion para validar ingreso unico de amigo

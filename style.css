@@ -160,3 +160,88 @@ ul {
 .button-draw:hover {
     background-color: var(--color-button-hover);
 }
+
+
+
+
+
+
+
+/********************************/
+
+/* Lo mismo que contenedor-> .input-wrapper 
+*/
+.name-list {
+    width: 100%;
+    max-width: 600px;
+    margin: 20px auto;
+}
+
+.amigo-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 15px;
+    margin-bottom: 10px;
+    background-color: #ebec86;
+    border-radius: 10px;
+    border: 1px solid #ddd;
+    box-shadow: 5px 5px 4px rgba(241, 151, 47, 0.733);
+    font-family: Arial, sans-serif;
+    color: #333;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+
+.amigo-item:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.amigo-numero {
+    background-color: #007bff; /* Color azul, puedes ajustarlo */
+    color: white;
+    border-radius: 50%;
+    width: 25px;
+    height: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    font-weight: bold;
+    margin-right: 15px;
+}
+
+.amigo-nombre {
+    flex-grow: 1;
+    margin-left: 15px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.amigo-eliminar {
+    background-color: #dc3545; /* Color rojo */
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 25px;
+    height: 25px;
+    font-weight: bold;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    line-height: 1;
+    font-size: 14px;
+    transition: background-color 0.3s;
+}
+
+.amigo-eliminar:hover {
+    background-color: #fdb61e; /* Color rojo más oscuro al pasar el cursor */
+    border-color: #ff0015; /* Color azul */
+    border-width: 3px; /* Grosor de 8 píxeles */
+    border-style: solid; /* Tipo de borde */
+}
