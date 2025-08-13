@@ -83,18 +83,28 @@ function sortearAmigo(){
         document.querySelector("#amigo").focus();
     } else{
         document.querySelector("#amigo").value = '';
-    //alert("amigos.length: "+amigos.length);
-    //alert(amigos);
-    let sorteo = Math.floor(Math.random()*amigos.length);
+        //alert("amigos.length: "+amigos.length);
+        //alert(amigos);
+        let sorteo = Math.floor(Math.random()*amigos.length);
 
-    document.querySelector("#listaAmigos").innerHTML = "";
-    console.log(sorteo);
-    // document.querySelector("#resultado").innerHTML = `<li>${amigos[sorteo]}</li>`;
-    document.querySelector("#resultado").innerHTML = `<div class="amigo-item">
-            <span class="amigo-numero">${sorteo + 1}</span>
-            <span class="amigo-nombre">${amigos[sorteo]}</span>
-            </div>
-        `;
+        document.querySelector("#listaAmigos").innerHTML = "";
+        console.log(sorteo);
+        // document.querySelector("#resultado").innerHTML = `<li>${amigos[sorteo]}</li>`;
+        document.querySelector("#resultado").innerHTML = `<div class="amigo-item">
+                <span class="amigo-numero">${sorteo + 1}</span>
+                <span class="amigo-nombre">${amigos[sorteo]}</span>
+                </div>
+            `;
+        //document.querySelector("#resultado").scrollIntoView({ behavior: 'smooth' });
+        document.querySelector("#amigo").disabled = true; // Deshabilita el campo de entrada de amigo
+        document.querySelector("#amigo").title = "No se pueden añadir más amigos después de sortear"; // Cambia el título del campo de entrada de amigo
+
+        document.querySelector("#addAmigo").disabled = true; // Deshabilita el botón de añadir amigo
+        document.querySelector("#addAmigo").title = "No se pueden añadir más amigos después de sortear"; // Cambia el título del botón de añadir amigo
+        
+        document.querySelector("#btnSorteo").disabled = true; // Deshabilita el botón de sortear amigo
+        document.querySelector("#btnSorteo").title = "No se puede volver a sortear, se debe reiniciar el sorteo"; // Cambia el título del botón de sortear amigo
+        //document.querySelector("#btnReiniciar").disabled = false; // Deshabilita el botón de reiniciar el Amigo Secreto
     }
 }
 
@@ -159,11 +169,24 @@ function validaTecla(e) {
 /* Funcion para el button [Reiniciar Sorteo] */
 /*************************************************/
 function reiniciaEstados() {// funcion de reinicio de juego
-    Amigos = []; // vacía el arreglo
-    Amigo = undefined;
+    amigos = []; // vacía el arreglo
+    amigo = undefined;
     document.getElementById('listaAmigos').innerHTML = ''; // limpia la lista visual
     document.getElementById('resultado').innerHTML = '';   // limpia el resultado
     document.getElementById('amigo').value = '';           // limpia el campo de entrada
+    
+
+    document.querySelector("#amigo").disabled = false; // Habilita el campo de entrada de amigo
+    document.querySelector("#amigo").title = "Solo alfabeto español y vocales con acento, incluyendo espacio. No se permiten números ni caracteres especiales; puedes presionar ENTER para Añadir"; // Cambia el título del campo de entrada de amigo
     document.getElementById('amigo').focus();    // Hace focus en el input de "amigo"
+
+    document.querySelector("#addAmigo").disabled = false; // Habilita el botón de añadir amigo
+    document.querySelector("#addAmigo").title = "Se reemplazaran los ' ' espacios consecutivos, se eliminaran los espacios en extremos"; // Cambia el título del botón de añadir amigo
+    
+    document.querySelector("#btnSorteo").disabled = false; // Habilita el botón de sortear amigo
+    document.querySelector("#btnSorteo").title = "Sortear amigo secreto"; // Cambia el título del botón de sortear amigo
+    //document.querySelector("#btnReiniciar").disabled = false; // Habilita el botón de reiniciar el Amigo Secreto
+    //document.querySelector("#btnReiniciar").title ="Se activara solo cuando se haya realiazado un sorteo exitoso"; // Cambia el título del botón de reiniciar
 }
 
+reiniciaEstados();
