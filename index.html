@@ -20,8 +20,10 @@
         <section class="input-section">
             <h2 class="section-title">Digite el nombre de sus amigos</h2>
             <div class="input-wrapper">
-                <input type="text" id="amigo" class="input-name" placeholder="Escribe un nombre">
-                <button class="button-add" onclick="agregarAmigo()">Añadir</button>
+                <input type="text" id="amigo" class="input-name" placeholder="Escribe un nombre ⌨️" title="Solo alfabeto español y vocales con acento, incluyendo espacio. No se permiten números ni caracteres especiales"
+                onkeypress="return validaTecla(event)">
+                <button id="addAmigo" class="button-add" onclick="agregarAmigo()" 
+                title="Se reemplazaran los ' ' espacios consecutivos, se eliminaran los espacios en extremos">Añadir</button>
             </div>
            
             <ul id="listaAmigos" class="name-list" aria-labelledby="listaAmigos" role="list"></ul>
@@ -32,6 +34,13 @@
                     <img src="assets/play_circle_outline.png" alt="Ícono para sortear">
                     Sortear amigo
                 </button>
+            </div>
+            <!-- Añado nuevo boton para reiniciar sorteo-->
+            <br/>
+            <div class="button-container">
+                <button class="button-draw" onclick="reiniciaEstados()" aria-label="Realizar otro sorteo">
+                    <img id="reiniciaImg" src="assets/reiniciar.png" alt="Nuevo Sorteo">
+                    Reiniciar Sorteo</button>
             </div>
         </section>
     </main>
