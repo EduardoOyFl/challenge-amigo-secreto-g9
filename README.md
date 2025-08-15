@@ -13,21 +13,26 @@ Amigo Secreto, es un desarrollo web solicitado por Alura para el programa de cap
 
 ## Funcionamiento de la Aplicación
 
-* Para agregar "Amigos" para el sorteo, los nombres de los amigos deben ingresarse a través de la caja de texto referenciada con frase "Escribe un nombre ⌨️" y luego hacer clic en botón [Añadir]
+* <strong>Para agregar "Amigos" para el sorteo</strong>, los nombres de los amigos deben ingresarse a través de la caja de texto referenciada con frase "Escribe un nombre ⌨️" y luego hacer clic en botón [Añadir]
 
   <span><img src="./img-md/input.png"/> También , puede "Añadir" con un ENTER.</span>
 
-* Cada vez que se agregue un nombre, este se agregará a una lista que estará bajo la caja de texto de entrada de nombres.
+* <strong>Cada vez que se agregue un nombre</strong>, este se agregará a una lista que estará bajo la caja de texto de entrada de nombres.
 
   <img src="./img-md/listado.png"/>
 
-* Sorteo del amigo secreto al azar: Idealmente, para que tenga sentido, por lo menos debería añadir a la lista de amigos un minio de 2 nombres  como maximo no hay un limite, salvo lo maximo que pueda soportar el hardware del equipo cliente y la renderización del navegador(en teoría); en el momento en que la lista de amigos esté completa, para realizar el sorteo, haga clic en botón [ Sortear amigo ].
+* <strong>Sorteo del amigo secreto al azar</strong>: Idealmente, para que tenga sentido, por lo menos debería añadir a la lista de amigos un minio de 2 nombres  como maximo no hay un limite, salvo lo maximo que pueda soportar el hardware del equipo cliente y la renderización del navegador(en teoría); en el momento en que la lista de amigos esté completa, para realizar el sorteo, haga clic en botón [ Sortear amigo ].
 
   <img src="./img-md/boton-sorteo.png"/>
 
   Y el resultado será similar a la imagen siguiente:
 
   <img src="./img-md/resultado.png"/>
+
+* <strong>Eliminar un amigo de la lista de amigos</strong>, Una vez que haya agregado a lo menos 1 amigo postulante a "Amigo secreto", este aparecerá en una lista vertical bajo la caja de ingreso de nombres de amigo y en cada uno que se agregue, se dispondrá en la misma línea horizontal de un botón circular, rojo con una X(que al pasar el mause sobre él, cambiará a botón color naranjo con contorno rojo), cuya función al clickearlo, será eliminar de la lista el NOMBRE asociado en la misma fila, sin solicitar confirmación para hacerlo.
+
+  <img src="./img-md/boton-eliminar.png"/>
+
 
 <hr>
 
