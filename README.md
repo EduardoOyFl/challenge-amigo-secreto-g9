@@ -66,7 +66,7 @@ Amigo Secreto, es un desarrollo web solicitado por Alura para el programa de cap
   - <strong>Palabras con vocales con o sin acento</strong>, además de no distinguir entre mayúsculas y minúsculas, tampoco hace distiinción entre palabras con vocales acentuadas o no, por ejemplo:
 <br/>
   
-      + Santa María = Santa       mária = Santa Maria = SÁNTÁ MárÍÁ
+      + Santa María = Santa       mária = Santa Maria = SÁNTÁ        MárÍÁ
 <br/>
         <img src="./img-md/santa-maria.png"/>
 
