@@ -91,6 +91,8 @@ function sortearAmigo(){
         console.log(sorteo);
         // document.querySelector("#resultado").innerHTML = `<li>${amigos[sorteo]}</li>`;
         document.querySelector("#resultado").innerHTML = `<div class="amigo-item">
+                <span class="amigo-nombre">Tu amigo Secreto es:&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                <br>
                 <span class="amigo-numero">${sorteo + 1}</span>
                 <span class="amigo-nombre">${amigos[sorteo]}</span>
                 </div>
