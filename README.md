@@ -81,9 +81,9 @@ Amigo Secreto, es un desarrollo web solicitado por Alura para el programa de cap
 
   Los requerimientos son mínimos, fuera de la siguiente lista, no requiere una instalación como tal de la web Amigo Secreto:
   
-* Navegador web.
-* Soporte para javascript por el navegador
-* Terner habilitada a ejecución de script en el navegador
+* ✅ Navegador web.
+* ✅ Soporte para javascript por el navegador
+* ✅ Terner habilitada a ejecución de script en el navegador
 
 <hr>
 
